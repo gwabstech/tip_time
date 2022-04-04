@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:visibility="visible"
     android:layout_height="match_parent"
     android:padding="16dp"
     tools:context=".MainActivity">
@@ -60,7 +61,7 @@
         android:id="@+id/round_up_switch"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:checked="true"
+        android:checked="false"
         android:minHeight="48dp"
         android:text="@string/round_up_tip"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,7 +83,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="Tip Amount: $10"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/calculate_button" />
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
